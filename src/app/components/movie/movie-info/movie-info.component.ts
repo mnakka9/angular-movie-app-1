@@ -42,6 +42,6 @@ export class MovieInfoComponent implements OnInit {
   ngOnInit() {}
 
   getStreamInfo() {
-    return this.http.get("../../../../assets/movies.json").pipe();
+    return this.http.get("assets/movies.json").pipe();
   }
 }

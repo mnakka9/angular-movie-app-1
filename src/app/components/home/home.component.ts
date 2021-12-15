@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
 
   getAvailableMovies() {
     // tslint:disable-next-line: quotemark
-    this.http.get("../../../assets/movies.json").subscribe((data: any) => {
+    this.http.get("assets/movies.json").subscribe((data: any) => {
       this._availableMovies = data.movies;
       if (this._availableMovies) {
         const calls = [];
