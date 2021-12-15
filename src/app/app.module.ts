@@ -22,6 +22,7 @@ import { CastCardComponent } from './components/movie/cast-card/cast-card.compon
 import { TimePipe } from './pipes/time.pipe';
 import { CrewInfoComponent } from './components/movie/crew-info/crew-info.component';
 import { FormsModule } from '@angular/forms';
+import { GroupDetailsComponent } from './components/home/group-details/group-details.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { FormsModule } from '@angular/forms';
     MovieInfoComponent,
     CastCardComponent,
     TimePipe,
-    CrewInfoComponent
+    CrewInfoComponent,
+    GroupDetailsComponent
   ],
   imports: [
     BrowserModule,

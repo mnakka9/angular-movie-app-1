@@ -12,6 +12,12 @@
   </div>
 </div>
 
+<div *ngIf="_streamSrc" class="row">
+  <div class="flex-column">
+    <iframe [src]="_streamSrc?.safeUrl" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="800" height="600" allowfullscreen></iframe>
+  </div>
+</div>
+
 <div class=" row cast">
   <div class="title">
     <h4>Cast:</h4>
@@ -19,6 +25,6 @@
   <div class="row">
     <div class="col-md-3 mb-4" *ngFor="let person of cast">
       <app-cast-card [person]="person"></app-cast-card>
-    </div>  
+    </div>
   </div>
 </div>

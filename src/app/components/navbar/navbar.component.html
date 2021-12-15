@@ -1,7 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" routerLink="">
-    <i class="fas fa-film"></i>
-    MovieApp
+    MN Watch Movies
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -18,7 +17,7 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input #searchInput (keypress.enter)="searchMovie(searchInput.value)" [(ngModel)]="term" name="term" class="form-control mr-sm-2" type="search" placeholder="Search Movie" aria-label="Search">
-      <button (click)="searchMovie(searchInput.value)" class="btn btn-outline-success my-2 my-sm-0"><i class="fas fa-search"></i></button>
+      <button (click)="searchMovie(searchInput.value)" class="btn btn-outline-success my-2 my-sm-0"><i class="fa fa-search"></i></button>
     </form>
   </div>
 </nav>

@@ -1,7 +1,21 @@
+<div *ngIf="isStreamMovie">
+  <h1 class="title">{{ movieGroupTitle }}</h1>
+  <hr>
+  <div class="row mb-5">
+    <div class="col-md-3 mb-4" *ngFor="let movie of movies | slice:0:sliceSize">
+      <app-card-movie [movie]="movie"></app-card-movie>
+    </div>
+  </div>
+  <div class="row justify-content-end">
+<button class="btn-outline-info" [disabled]="movies?.length <= sliceSize" (click)="loadMoreClicked()"> Load more.. </button>
+  </div>
+</div>
+<div *ngIf="!isStreamMovie">
 <h1 class="title">{{ movieGroupTitle }}</h1>
 <hr>
 <div class="row mb-5">
   <div class="col-md-3 mb-4" *ngFor="let movie of movies | slice:0:8">
     <app-card-movie [movie]="movie"></app-card-movie>
   </div>
+</div>
 </div>
